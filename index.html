@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // area of squre
+
+  function AreaofSquare(l) {
+    return l * l;
+  }
+
+  const area1 = AreaofSquare(5);
+  console.log(area1 + " m2");
+
+  const rectVolume = (l, b, h) => {
+    return l * b * h;
+  };
+
+  // area of circle
+
+  function getCircleArea(radius) {
+    if (radius <= 0) {
+      return "Radius must be a positive number.";
+    }
+    const area = Math.PI * radius * radius;
+    return area;
+  }
+
+  const radius = 5;
+  console.log("Area of the circle:", getCircleArea(radius));
+
+  function getRectangleArea(width, height) {
+    if (width <= 0 || height <= 0) {
+      return "Width and height must be positive numbers.";
+    }
+    const area = width * height;
+    return area;
+  }
+
+  const width = 10;
+  const height = 5;
+  console.log("Area of the rectangle:", getRectangleArea(width, height));
+
+  function getTriangleArea(base, height) {
+    if (base <= 0 || height <= 0) {
+      return "Base and height must be positive numbers.";
+    }
+    const area = 0.5 * base * height;
+    return area;
+  }
+
+  const base = 8;
+  const height1 = 6;
+  console.log("Area of the triangle:", getTriangleArea(base, height));
+
+  // volume of cube
+
+  function getCubeVolume(side) {
+    if (side <= 0) {
+      return "Side length must be a positive number.";
+    }
+    const volume = side * side * side;
+    return volume;
+  }
+
+  const side = 4;
+  console.log("Volume of the cube:", getCubeVolume(side));
+
+  // volume of cylinder
+  function getCylinderVolume(radius, height) {
+    if (radius <= 0 || height <= 0) {
+      return "Radius and height must be positive numbers.";
+    }
+    const volume = Math.PI * radius * radius * height;
+    return volume;
+  }
+
+  const radius1 = 3;
+  const height2 = 10;
+  console.log("Volume of the cylinder:", getCylinderVolume(radius, height));
+
+  // volume of cone
+
+  function getConeVolume(radius, height) {
+    if (radius <= 0 || height <= 0) {
+      return "Radius and height must be positive numbers.";
+    }
+    const volume = (1 / 3) * Math.PI * radius * radius * height;
+    return volume;
+  }
+
+  const radius2 = 4;
+  const height3 = 9;
+  console.log("Volume of the cone:", getConeVolume(radius, height));
+</script>
